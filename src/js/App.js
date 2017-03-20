@@ -1,5 +1,6 @@
-//Entry point of the application
-import React from 'react';
-import { render } from 'react-dom';
+// Entry point of the application
+import React from 'react'
+import { render } from 'react-dom'
+import ShoppingCart from './ShoppingCart'
 
-render(<div>Hello World youy</div>, document.getElementById('root'));
+render(<ShoppingCart />, document.getElementById('root'))
