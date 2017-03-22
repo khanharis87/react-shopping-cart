@@ -38,7 +38,7 @@ const ProductList = React.createClass({
     const {items} = this.props
 
     return (
-      <div>
+      <div className='container'>
         {
           items.map((item) => {
             return (

@@ -9,13 +9,15 @@ const PersonalInfo = React.createClass({
   render () {
     const {email, phoneNumber} = this.props.customer
     const {assignedAt} = this.props
+    const assignedAttDateArray = assignedAt.split(' ')
+    const assignedAtDateForUi = `${assignedAttDateArray[1]} (${assignedAttDateArray[0]})`
 
     return (
-      <div className='shopping-cart-personal-info container'>
+      <div className='shopping-cart-personal-info container' style={{padding: '20px 20px'}}>
 
         <div className='shopping-cart-personal-info-assigned-at row'>
           <p><strong>Aangevraagd om:</strong></p>
-          <p className='text-muted'>{assignedAt}</p>
+          <p className='text-muted'>{assignedAtDateForUi}</p>
         </div>
 
         <div className='shopping-cart-personal-info-email row'>

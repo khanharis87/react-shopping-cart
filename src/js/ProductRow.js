@@ -15,11 +15,11 @@ const ProductRow = React.createClass({
     const {onChange} = this.props
 
     return (
-      <div>
-        <label htmlFor={code}>
+      <div className='row form-group' style={{paddingTop: '10px'}}>
+        <label className='control-label' htmlFor={code}>
           <input type='checkbox' id={code} onChange={onChange} value={status} />
           <img src={imageUrl} />
-          <div className='name'>{name}</div>
+          <h4 className='name' style={{display: 'inline-block'}}>{name}</h4>
           <div className='description'>{description}</div>
         </label>
       </div>
