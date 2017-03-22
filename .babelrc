@@ -1,6 +1,7 @@
 {
   "presets": [
     ["es2015", {"modules": false}], //Webpack should take care of modules and not babel because of treeshaking
-    "react"
-  ]
+    "react",
+  ],
+  "plugins": ["transform-object-rest-spread"]
 }

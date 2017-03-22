@@ -1,5 +1,8 @@
 import React, { PropTypes } from 'react'
 
+/**
+ * Presentational component and child of ProductList
+ */
 const ProductRow = React.createClass({
   propTypes: {
     item: PropTypes.object.isRequired,
@@ -10,6 +13,7 @@ const ProductRow = React.createClass({
     const { code, name, imageUrl, description } = this.props.item.product
     const {status} = this.props.item
     const {onChange} = this.props
+
     return (
       <div>
         <label htmlFor={code}>
